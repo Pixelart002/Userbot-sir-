@@ -1,0 +1,13 @@
+services:
+  - type: worker
+    name: kyro pro
+    env: python
+    envVars:
+      - key: API_ID
+        value: "23244273"
+      - key: API_HASH
+        value: "1607ef96e3c685f237352e2ef120e91a"
+      - key: TARGET_CHANNEL
+        value: "@xcgjpay"
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python kyrobot.py"
